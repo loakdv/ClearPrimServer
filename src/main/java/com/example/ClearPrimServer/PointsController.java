@@ -18,6 +18,11 @@ public class PointsController {
     }
 
 
+    @GetMapping
+    String getText(){
+        return "BIBA";
+    }
+
     @GetMapping("points")
     List<Point> getAll(){
         return points;
